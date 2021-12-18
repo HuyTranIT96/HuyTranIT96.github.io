@@ -94,6 +94,7 @@ html{
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 #nav, .subnav{
     list-style-type: none;
@@ -161,15 +162,41 @@ html{
 #header .search-btn{
     float: right;
     line-height: 46px;
-    padding: 0 21px;
-   
-  
+    padding: 0 21px; 
 }
+
 #header .search-btn:hover{
     color: #fff;
     background-color: #f44336;
     cursor: pointer;
 }
+
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px; 
+}
+/* mobi*/
+
+#header .mobile-menu-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px; 
+}
+
+#header .mobile-menu-btn{
+    color: #fff;
+    background-color: #ccc;
+    
+}
+
+#header .mobile-menu-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px; 
+}
+/* mobi*/
+
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -178,10 +205,11 @@ html{
     height: 2000px;
 }
 
-#slider {
+#slider {   
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
+    width: 100%;
     background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
@@ -215,17 +243,23 @@ html{
 #slider .text-description{
     font-size:  15px;
     margin-top: 25px;
+    color: #fff;
 }
 
 #content .content-section{
     
     width: 800px;
+    max-width: 100%;
     border: 16px;
     line-height: 1.5;
     box-sizing: inherit;
-    margin-left: 172px;
+    /* margin-left: 172px; */
+    margin-left: 15.3em;
+     text-align: center;
     padding-top: 64px;
     padding-bottom: 64px;
+    padding: 16px;
+
     
 }
 
@@ -503,3 +537,17 @@ html{
     padding: 15px;
     font-size: 15px;
 }
+
+@media(max-width: 740px)
+{
+    .col-thirt
+    {
+        width: 100%;
+    }
+    .col{
+        padding-left: 8px;
+    padding-top: 8px;
+    }
+}
+
+

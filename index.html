@@ -8,6 +8,7 @@
     <title>The band</title>
     <link rel="icon" href="https://fullstack.edu.vn/assets/favicon/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 
@@ -37,6 +38,11 @@
             <!--Begin search-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobie-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu">
+
+                </i>
             </div>
             <!--End search-->
 
@@ -261,6 +267,8 @@
 
     <script>
 
+
+
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.modal')
         const remoteBtns = document.querySelectorAll('.js-remove')
@@ -288,6 +296,24 @@
         modalContainer.addEventListener('click', function (even) {
             even.stopPropagation();
         })
+
+        // menu mobie
+        var header = document.getElementById('header');
+        console.log(header);
+        var mobieMenu = document.getElementById('mobie-menu');
+        console.log(mobieMenu);
+        mobieMenu.onclick = function(){
+           var isclosed = header.clientHeight === 46;
+           if(isclosed)
+           {
+               header.style.height = 'auto';
+
+           }
+           else{
+            header.style.height = '46px';
+           }
+        }
+        
 
     </script>
 </body>
